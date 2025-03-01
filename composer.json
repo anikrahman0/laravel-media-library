@@ -1,0 +1,39 @@
+{
+    "name": "noobtrader/laravel-media-library",
+    "description": "A media library package for Laravel with local and cloud storage support.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Noobtrader\\LaravelMediaLibrary\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noobtrader\\LaravelMediaLibrary\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MD. Anik Rahman",
+            "email": "a7604366@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "intervention/image": "^2.7",
+        "league/flysystem-aws-s3-v3": "^3.23"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Noobtrader\\LaravelMediaLibrary\\MediaLibraryServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.0"
+    }
+}
